@@ -16,6 +16,10 @@ public class Main {
                     }
                 }
             }
+            File file = new File("forLongest");
+            PrintWriter pe = new PrintWriter(file);
+            pe.print(current);
+            pe.close();
             System.out.println("Самое длинное слово: " + current + " (" +max +")");
         } catch (FileNotFoundException e) {
             System.out.println("Файл не найден.");
